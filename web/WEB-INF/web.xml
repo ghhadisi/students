@@ -9,4 +9,48 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+
+    <servlet>
+        <servlet-name>studetsSearch</servlet-name>
+        <servlet-class>com.hss.student.setvlets.StudetsSearchServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>studetsSearch</servlet-name>
+        <url-pattern>/studetsSearch</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>studentUpdateServlet</servlet-name>
+        <servlet-class>com.hss.student.setvlets.StudentUpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>studentUpdateServlet</servlet-name>
+        <url-pattern>/studentUpdate</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>studentDetailServlet</servlet-name>
+        <servlet-class>com.hss.student.setvlets.StudentDetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>studentDetailServlet</servlet-name>
+        <url-pattern>/studentDetail</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>studetDeleteServlet</servlet-name>
+        <servlet-class>com.hss.student.setvlets.StudetDeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>studetDeleteServlet</servlet-name>
+        <url-pattern>/studetDelete</url-pattern>
+    </servlet-mapping>
 </web-app>

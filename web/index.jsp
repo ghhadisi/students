@@ -7,6 +7,6 @@
   <body>
  <%--    <jsp:forward page="./jsp/student_list.jsp">
      </jsp:forward>--%>
- <a href="jsp/student_list.jsp" >students</a>
+ <a href="studetsSearch" >students</a>
   </body>
 </html>
