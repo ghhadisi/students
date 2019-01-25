@@ -27,7 +27,9 @@ public class StudetsSearchServlet extends HttpServlet {
             //1. 查询出来所有的学生
             StudentService service = new StudentServiceImpl();
             List<Student> list = service.searchStudent(sname,sgender);
-
+            for (Student student : list) {
+                System.out.println("stu="+student);
+            }
             //2. 先把数据存储到作用域中
             req.setAttribute("list", list);
             //3. 跳转页面

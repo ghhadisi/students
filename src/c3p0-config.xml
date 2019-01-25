@@ -4,7 +4,7 @@
 	<!-- default-config 默认的配置，  -->
   <default-config>
     <property name="driverClass">com.mysql.jdbc.Driver</property>
-    <property name="jdbcUrl">jdbc:mysql://localhost/db1</property>
+    <property name="jdbcUrl">jdbc:mysql://localhost/db1?useUnicode=true&amp;characterEncoding=UTF8</property>
     <property name="user">root</property>
     <property name="password">123456</property>
     
