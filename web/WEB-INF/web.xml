@@ -53,4 +53,50 @@
         <servlet-name>studetDeleteServlet</servlet-name>
         <url-pattern>/studetDelete</url-pattern>
     </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>UserNameCheckServlet</servlet-name>
+        <servlet-class>com.hss.student.setvlets.UserNameCheckServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UserNameCheckServlet</servlet-name>
+        <url-pattern>/userNameCheckServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>KeyWordsServlet</servlet-name>
+        <servlet-class>com.hss.student.setvlets.KeyWordsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>KeyWordsServlet</servlet-name>
+        <url-pattern>/keyWordsServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>DataXmlServlet</servlet-name>
+        <servlet-class>com.hss.student.setvlets.DataXmlServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DataXmlServlet</servlet-name>
+        <url-pattern>/dataXmlServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>DataJsonServlet</servlet-name>
+        <servlet-class>com.hss.student.setvlets.DataJsonServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DataJsonServlet</servlet-name>
+        <url-pattern>/dataJsonServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
