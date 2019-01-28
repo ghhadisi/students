@@ -99,4 +99,44 @@
         <servlet-name>DataJsonServlet</servlet-name>
         <url-pattern>/dataJsonServlet</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ListenerServlet</servlet-name>
+        <servlet-class>com.hss.student.setvlets.ListenerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ListenerServlet</servlet-name>
+        <url-pattern>/listenerServlet</url-pattern>
+    </servlet-mapping>
+
+
+
+    <!--listener 总共有8个 划分成三种类型-->
+        <!--监听三个作用域创建和销毁-->
+    <listener>
+        <listener-class>com.hss.student.listener.life.MyServletContextListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>com.hss.student.listener.life.MySessionListener</listener-class>
+    </listener>
+
+    <listener>
+        <listener-class>com.hss.student.listener.life.MyServletRequestListener</listener-class>
+    </listener>
+        <!--监听三个作用域创建和销毁-->
+        <!--属性变更-->
+    <listener>
+        <listener-class>com.hss.student.listener.attrchange.MySessionAttrChangeListener</listener-class>
+    </listener>
+
+
+    <!--监听httpSession里面存值的状态变更-->
+    <listener>
+        <listener-class>com.hss.student.listener.active.MyHttpSessionActivationListener</listener-class>
+    </listener>
+
+    <!--listener-->
+
 </web-app>

@@ -54,6 +54,8 @@
 </head>
 <body>
 
+<% session.setAttribute("aaa","bbb");%>
+
     <input type="text" style="width:500px; margin-left: 20%; margin-right: 50px; margin-top: 10%" id="textContent"/>
     <input type="button" value="搜索" id="btnSearch" />
 

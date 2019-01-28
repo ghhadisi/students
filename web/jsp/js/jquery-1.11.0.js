@@ -193,7 +193,7 @@ jQuery.extend = jQuery.fn.extend = function() {
 		target = {};
 	}
 
-	// extend jQuery itself if only one argument is passed
+	// extend jQuery itself if only life argument is passed
 	if ( i === length ) {
 		target = this;
 		i--;
@@ -312,7 +312,7 @@ jQuery.extend({
 		}
 
 		// Own properties are enumerated firstly, so to speed up,
-		// if last one is own, then all properties are own.
+		// if last life is own, then all properties are own.
 		for ( key in obj ) {}
 
 		return key === undefined || hasOwn.call( obj, key );
@@ -650,7 +650,7 @@ var i,
 	push_native = arr.push,
 	push = arr.push,
 	slice = arr.slice,
-	// Use a stripped-down indexOf if we can't use a native one
+	// Use a stripped-down indexOf if we can't use a native life
 	indexOf = arr.indexOf || function( elem ) {
 		var i = 0,
 			len = this.length;
@@ -1315,7 +1315,7 @@ setDocument = Sizzle.setDocument = function( node ) {
 			return 0;
 		}
 
-		// Sort on method existence if only one input has compareDocumentPosition
+		// Sort on method existence if only life input has compareDocumentPosition
 		var compare = !a.compareDocumentPosition - !b.compareDocumentPosition;
 		if ( compare ) {
 			return compare;
@@ -2473,7 +2473,7 @@ function select( selector, context, results, seed ) {
 		match = tokenize( selector );
 
 	if ( !seed ) {
-		// Try to minimize operations if there is only one group
+		// Try to minimize operations if there is only life group
 		if ( match.length === 1 ) {
 
 			// Take a shortcut and set the context if the root selector is an ID
@@ -3460,7 +3460,7 @@ jQuery.ready.promise = function( obj ) {
 		readyList = jQuery.Deferred();
 
 		// Catch cases where $(document).ready() is called after the browser event has already occurred.
-		// we once tried to use readyState "interactive" here, but it caused issues like the one
+		// we once tried to use readyState "interactive" here, but it caused issues like the life
 		// discovered by ChrisS here: http://bugs.jquery.com/ticket/12282#comment:15
 		if ( document.readyState === "complete" ) {
 			// Handle it asynchronously to allow scripts the opportunity to delay ready
@@ -3533,7 +3533,7 @@ support.ownLast = i !== "0";
 support.inlineBlockNeedsLayout = false;
 
 jQuery(function() {
-	// We need to execute this one support test ASAP because we need to know
+	// We need to execute this life support test ASAP because we need to know
 	// if body.style.zoom needs to be set.
 
 	var container, div,
@@ -3916,12 +3916,12 @@ jQuery.fn.extend({
 
 		return arguments.length > 1 ?
 
-			// Sets one value
+			// Sets life value
 			this.each(function() {
 				jQuery.data( this, key, value );
 			}) :
 
-			// Gets one value
+			// Gets life value
 			// Try to fetch any internally stored data first
 			elem ? dataAttr( elem, key, jQuery.data( elem, key ) ) : undefined;
 	},
@@ -3989,7 +3989,7 @@ jQuery.extend({
 		}
 	},
 
-	// not intended for public consumption - generates a queueHooks object, or returns the current one
+	// not intended for public consumption - generates a queueHooks object, or returns the current life
 	_queueHooks: function( elem, type ) {
 		var key = type + "queueHooks";
 		return jQuery._data( elem, key ) || jQuery._data( elem, key, {
@@ -4094,7 +4094,7 @@ var access = jQuery.access = function( elems, fn, key, value, chainable, emptyGe
 			jQuery.access( elems, fn, i, key[i], true, emptyGet, raw );
 		}
 
-	// Sets one value
+	// Sets life value
 	} else if ( value !== undefined ) {
 		chainable = true;
 
@@ -4843,7 +4843,7 @@ jQuery.event = {
 	},
 
 	simulate: function( type, elem, event, bubble ) {
-		// Piggyback on a donor event to simulate a different one.
+		// Piggyback on a donor event to simulate a different life.
 		// Fake originalEvent to avoid donor's stopPropagation, but if the
 		// simulated event prevents default then we do the same on the donor.
 		var e = jQuery.extend(
@@ -4919,7 +4919,7 @@ jQuery.Event = function( src, props ) {
 		jQuery.extend( this, props );
 	}
 
-	// Create a timestamp if incoming event doesn't have one
+	// Create a timestamp if incoming event doesn't have life
 	this.timeStamp = src && src.timeStamp || jQuery.now();
 
 	// Mark it as fixed
@@ -7825,7 +7825,7 @@ jQuery.extend({
 				var value, option,
 					options = elem.options,
 					index = elem.selectedIndex,
-					one = elem.type === "select-one" || index < 0,
+					one = elem.type === "select-life" || index < 0,
 					values = one ? null : [],
 					max = one ? index + 1 : options.length,
 					i = index < 0 ?
@@ -7845,7 +7845,7 @@ jQuery.extend({
 						// Get the specific value for the option
 						value = jQuery( option ).val();
 
-						// We don't need an array for one selects
+						// We don't need an array for life selects
 						if ( one ) {
 							return value;
 						}
@@ -7953,7 +7953,7 @@ jQuery.extend({
 		}
 
 		// All attributes are lowercase
-		// Grab necessary hook if one is defined
+		// Grab necessary hook if life is defined
 		if ( nType !== 1 || !jQuery.isXMLDoc( elem ) ) {
 			name = name.toLowerCase();
 			hooks = jQuery.attrHooks[ name ] ||
@@ -8439,7 +8439,7 @@ jQuery.fn.extend({
 				}
 
 				// If the element has a class name or if we're passed "false",
-				// then remove the whole classname (if there was one, the above saved it).
+				// then remove the whole classname (if there was life, the above saved it).
 				// Otherwise bring back whatever was previously saved (if anything),
 				// falling back to the empty string if nothing was stored.
 				this.className = this.className || value === false ? "" : jQuery._data( this, "__className__" ) || "";
@@ -8744,7 +8744,7 @@ function ajaxHandleResponses( s, jqXHR, responses ) {
 				firstDataType = type;
 			}
 		}
-		// Or just use first one
+		// Or just use first life
 		finalDataType = finalDataType || firstDataType;
 	}
 
@@ -8921,7 +8921,7 @@ jQuery.extend({
 
 		// For options that shouldn't be deep extended:
 		// you can add your own custom options here if
-		// and when you create one that shouldn't be
+		// and when you create life that shouldn't be
 		// deep extended (see ajaxExtend)
 		flatOptions: {
 			url: true,
@@ -9139,7 +9139,7 @@ jQuery.extend({
 					// If there is already a '_' parameter, set its value
 					cacheURL.replace( rts, "$1_=" + nonce++ ) :
 
-					// Otherwise add one to the end
+					// Otherwise add life to the end
 					cacheURL + ( rquery.test( cacheURL ) ? "&" : "?" ) + "_=" + nonce++;
 			}
 		}
