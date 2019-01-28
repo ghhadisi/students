@@ -139,4 +139,72 @@
 
     <!--listener-->
 
+
+
+    <!--filter -->
+
+    <filter>
+        <filter-name>Filter1</filter-name>
+        <filter-class>com.hss.student.filter.Filter1</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter1</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+<!--
+
+
+		chain.doFilter(request, response); 放行， 让请求到达下一个目标。
+
+	1. 全路径匹配  以 /  开始
+
+			/LoginServlet
+
+	2. 以目录匹配 以 / 开始  以 * 结束
+
+		/demo01/*
+
+	3. 以后缀名匹配  以 * 开始 以后缀名结束
+
+		*.jsp  *.html *.do
+
+
+		4. 针对 dispatcher 设置
+
+		REQUEST ： 只要是请求过来，都拦截，默认就是REQUEST
+		FORWARD : 只要是转发都拦截。
+		ERROR ： 页面出错发生跳转
+		INCLUDE ： 包含页面的时候就拦截。
+-->
+
+  <!--  <filter>
+        <filter-name>Filter4</filter-name>
+        <filter-class>com.hss.student.filter.Filter4</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter4</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+
+    <filter>
+        <filter-name>Filter2</filter-name>
+        <filter-class>com.hss.student.filter.Filter2</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+    <filter>
+        <filter-name>Filter3</filter-name>
+        <filter-class>com.hss.student.filter.Filter3</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>Filter3</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>-->
+
+
+
 </web-app>
